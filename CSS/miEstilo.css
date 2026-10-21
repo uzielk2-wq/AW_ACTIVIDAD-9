@@ -1,0 +1,196 @@
+#logoImg{
+    border-radius: 50%;
+    width: 48px;
+    height: auto;
+}
+
+#inicio{
+    background-image: url('../images/sandia.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.inicio-titulo{
+    color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.inicio-titulo p{
+    font-size: 20px;
+    font-size: bold;
+}
+
+.inicio-titulo h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.inicio-titulo button{
+    font-size: bold;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    font-weight: 600;
+    width: 170px;
+    height: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.inicio-titulo button:hover{
+    background-color: #335F20;
+    color: white;
+    transform: scale(1.03);
+}
+
+#especialidades{
+    background-image: url('../images/pinas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#especialidades .border {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#especialidades .border:hover {
+
+    transform: translateY(-5px);
+}
+
+#platillos img {
+    max-width: 100%;
+    border-radius: 100%;
+    padding: auto;
+    height: auto;
+    filter: drop-shadow(5px 8px 10px rgba(0, 0, 0, 0.2));
+    transition: transform 0.8s ease-in-out, filter 0.3s ease;
+}
+
+#platillos img:hover {
+    transform: scale3d(1.1, 1, 1);/*nuevo*/
+    filter: drop-shadow(0px 20px 24px rgba(0, 0, 0, 0.4));
+}
+
+a:hover{
+    color: chocolate;
+}
+
+.bg-blanco {
+    background-color: #335F20;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+
+@media(max-whidth: 767px){
+    .inicio-titulo{
+        color: ffc107;
+        margin-top: 10%;    
+    }
+
+    #inicio{
+        height: 80vh;
+
+    }
+}
+
+@media(max-width: 575px){
+    #inicio{
+    background-position: bottom;
+    background-size: cover;
+    height: 50vh;
+    }
+
+    #inicio h1{
+        display: none;
+    }
+
+    #inicio p{
+        text-align: start;
+    }
+
+    #inicio-titulo{
+        margin-top: 0;
+    }
+}
+
+.banner-card {
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.banner-carne {
+    background-image: url('../images/carne.jpg');
+}
+
+.banner-frutas {
+    background-image: url('../images/frutas.jpg');
+}
+
+.banner-verduras {
+    background-image: url('../images/verduras.jpg');
+}
+
+.banner-organico {
+    background-image: url('../images/organic.jpg');
+}
+
+.mi-boton {
+    background-color: #53a92c;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mi-boton:hover {
+    background-color: #3f8320;
+    transform: scale(1.03);
+}
+footer {
+    background-color: #335F20;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.catitem {
+    color: #777777;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.catitem.active, 
+.catitem:hover {
+    color: #1e3a12;
+}
